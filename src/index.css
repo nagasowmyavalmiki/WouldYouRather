@@ -71,7 +71,7 @@ li {
 }
 
 .question-info > div > div {
-    color: #ffffff;
+    color: #969696;
     font-size: 15px;
 }
 
@@ -252,17 +252,16 @@ li {
 .card-poll-results {
     padding: 10px;
     margin-bottom: 15px;
-    background-color: #6c757d;
+    background-color: #ffffff;
     border: 1px solid grey;
     color: grey;
     text-align: center;
 }
-
 .chosen-answer {
-    background-color: #6c757d;
-    border: 2px soli#0099ff;
-    color: #ffffff !important;
-    
+    background-color: #9ef1fe;
+    border: 2px solid #17a2b8;
+    color: #17a2b8 !important;
+    font-weight: bold;
 }
 
 .results-header {

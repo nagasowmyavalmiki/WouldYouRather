@@ -42,9 +42,7 @@ class Dashboard extends Component {
 
                         <div className='row justify-content-center'>
                             <div className='col-sm-8'>
-                           { console.log("ques id")}
                                 {this.props.questionIds.map((id) => {
-                                    { console.log("ques id not null")}
                                     return (
                                         <Question key={id} id={id}
                                                   questionsToShow={questionsToShow}/>
@@ -60,8 +58,6 @@ class Dashboard extends Component {
 }
 
 function mapStateToProps({questions=[]}) {
-    console.log("sowmya")
-    console.log({questions})
     return {
         questionIds: Object.keys(questions)
             .sort((a, b) => questions[b].timestamp - questions[a].timestamp)

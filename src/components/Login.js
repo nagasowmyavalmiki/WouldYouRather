@@ -41,7 +41,7 @@ class Login extends Component {
         if (this.props.isAuthed) {
             return <Redirect to={from}/>;
         }
-        console.log(this.props.isAuthed)
+    
         return (
             <div>
                 <LoadingBar />

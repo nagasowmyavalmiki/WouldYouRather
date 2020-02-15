@@ -9,8 +9,6 @@ const Question = (props) => {
     if (question === null) {
         return <p>This question doesn't exist.</p>
     }
-    {console.log("venky")}
-    {console.log(question)}
     const {name, id, avatar, optionOne, optionTwo, hasVoted} = question;
 
     if (props.questionsToShow === 'answered' && hasVoted !== true) {
@@ -35,8 +33,6 @@ const Question = (props) => {
                     <div className='container'>
                         <div className='row justify-content-center'>
                             <div className='col-sm-4 border-right center'>
-                                {console.log("venky")}
-                                {console.log(avatar)}
                                 <img src={avatar} alt={`Avatar of ${name}`} className='avatar'/>
                             </div>
                             <div className='col-sm-8'>
